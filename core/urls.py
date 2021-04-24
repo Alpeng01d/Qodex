@@ -8,5 +8,7 @@ from core import views
 
 urlpatterns = [
    path('api/user', views.Login.as_view()),
-   path('password_change/', PasswordChangeView.as_view(), name='password_change')
+   path('api/weight_types', views.Weight_typesViews.as_view()),
+   path('api/operators', views.OperatorsViews.as_view()),
+   path('api/qodex_achive', views.Qodex_achiveViews.as_view()),
 ]

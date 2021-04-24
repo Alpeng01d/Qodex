@@ -3,7 +3,7 @@ from django.db import models
 
 #LOCAL IMPORTS
 
-
+'''
 class Auto(models.Model):
     """ Auto - model of auto databases """
     #RELATED FIELDS
@@ -47,3 +47,14 @@ class Auto_brands(models.Model):
      """ Auto_brands - model of auto_brands databases """
      #LOCAL FIELDS
      name = models.CharField(max_length=20, blank=True, null=True)
+     
+'''
+class Weight_types(models.Model):
+    """ Auto_brands - model of auto_brands databases """
+    #LOCAL FIELDS
+    name = models.TextField(blank=True, null=True)
+    
+    class Meta:
+        """ Model configurations """
+        managed = True
+        db_table = 'Weight_types'
